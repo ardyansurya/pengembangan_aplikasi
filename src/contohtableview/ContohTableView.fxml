@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contohtableview.ContohTableViewController">
+   <children>
+      <TableView fx:id="tableManusia" layoutX="14.0" layoutY="128.0" prefHeight="348.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="columNama" prefWidth="450.0" text="Nama" />
+          <TableColumn fx:id="columnUmur" prefWidth="149.0" text="Umur" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNama" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="298.0" promptText="Nama" />
+      <TextField fx:id="txtUmur" layoutX="322.0" layoutY="15.0" prefHeight="25.0" prefWidth="76.0" promptText="Umur" />
+      <Button fx:id="btnSimpan" layoutX="408.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBtnSimpanClick" text="Simpan" />
+      <Button fx:id="btnHapus" layoutX="474.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBtnHapusClick" text="Hapus" />
+      <Button fx:id="btnUpdate" layoutX="534.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBtnUpdateClick" text="Update" />
+
+   </children>
+</AnchorPane>
